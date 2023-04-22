@@ -8,7 +8,6 @@ namespace novella1.Interface
 {
     internal interface GameDrawing
     {
-        void StartScreenChapter();
         void StartGame();
     }
 }

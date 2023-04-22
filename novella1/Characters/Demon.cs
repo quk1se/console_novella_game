@@ -12,8 +12,10 @@ namespace novella1.Characters
         #region Variables
         private const string filePathChapter1 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 1 (Plane)\\DemonTxt.txt";
         private const string filePathChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\DemonTxt.txt";
-        private long lastPositionChapter1 = 0;
+        public long lastPositionChapter1 = 0;
+        public long lastPositionChapter2 = 0;
         private StreamReader readerChapter1 = new StreamReader(filePathChapter1);
+        private StreamReader readerChapter2 = new StreamReader(filePathChapter2);
         #endregion
         #region Properties
         public string FilePathChapter1
@@ -28,10 +30,9 @@ namespace novella1.Characters
         {
             get { return readerChapter1; }
         }
-        public long LastPositionChapter1
+        public StreamReader ReaderChapter2
         {
-            set { lastPositionChapter1 = value; }
-            get { return lastPositionChapter1; }
+            get { return readerChapter2; }
         }
         #endregion
 
@@ -570,7 +571,7 @@ namespace novella1.Characters
             Console.ForegroundColor = ConsoleColor.White;
             #endregion
         }
-        public void TextReader(StreamReader reader, long lastPosition)
+        public void TextReader(StreamReader reader, ref long lastPosition)
         {
             ShowPerson();
             reader.BaseStream.Seek(lastPosition, SeekOrigin.Begin);
@@ -579,13 +580,13 @@ namespace novella1.Characters
             foreach (char c in line.ToCharArray())
             {
                 Console.Write(c);
-                Thread.Sleep(30);
+                //Thread.Sleep(30);
             }
             Console.WriteLine();
             WaitKeyPress();
             Console.Clear();
         }
-        public void TextReaderChapter1(StreamReader reader, long lastPosition)
+        public void TextReaderChapter1(StreamReader reader, ref long lastPosition)
         { 
             reader.BaseStream.Seek(lastPosition, SeekOrigin.Begin);
             string line = reader.ReadLine();

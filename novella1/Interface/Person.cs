@@ -9,6 +9,5 @@ namespace novella1.Interface
     internal interface Person
     {
         public void ShowPerson();
-        public void WaitKeyPress();
     }
 }

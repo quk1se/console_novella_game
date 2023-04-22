@@ -13,8 +13,16 @@ namespace novella1.Characters
         private bool life = true;
         private const string filePathChapter1 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 1 (Plane)\\BobTxt.txt";
         private const string filePathChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\BobTxt.txt";
-        private long lastPositionChapter1 = 0;
+        private const string filePathChoiceChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\BobChoiceTxt.txt";
+        private const string filePathNoInhalerChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\BobNoInhalerTxt.txt";
+        public long lastPositionChapter1 = 0;
+        public long lastPositionChapter2 = 0;
+        public long lastPositionChoiceChapter2 = 0;
+        public long lastPositionNoInhalerChapter2 = 0;
         private StreamReader readerChapter1 = new StreamReader(filePathChapter1);
+        private StreamReader readerChapter2 = new StreamReader(filePathChapter2);
+        private StreamReader readerChoiceChapter2 = new StreamReader(filePathChoiceChapter2);
+        private StreamReader readerNoInhalerChapter2 = new StreamReader(filePathNoInhalerChapter2);
         #endregion
         #region Properties
         public bool Life
@@ -30,14 +38,29 @@ namespace novella1.Characters
         {
             get { return filePathChapter2; }
         }
+        public string FilePathChoiceChapter2
+        {
+            get { return filePathChoiceChapter2; }
+        }
+        public string FilePathNoInhalerChapter2
+        {
+            get { return filePathNoInhalerChapter2; }
+        }
         public StreamReader ReaderChapter1
         {
             get { return readerChapter1; }
         }
-        public long LastPositionChapter1
+        public StreamReader ReaderChapter2
         {
-            set { lastPositionChapter1 = value; }
-            get { return lastPositionChapter1; }
+            get { return readerChapter2; }
+        }
+        public StreamReader ReaderChoiceChapter2
+        {
+            get { return readerChoiceChapter2; }
+        }
+        public StreamReader ReaderNoInhalerChapter2
+        {
+            get { return readerNoInhalerChapter2; }
         }
         #endregion
 
@@ -237,7 +260,7 @@ namespace novella1.Characters
             Console.ForegroundColor = ConsoleColor.White;
             #endregion
         }
-        public void TextReader(StreamReader reader,long lastPosition)
+        public void TextReader(StreamReader reader,ref long lastPosition)
         {
             ShowPerson();
             reader.BaseStream.Seek(lastPosition, SeekOrigin.Begin);

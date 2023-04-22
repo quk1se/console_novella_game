@@ -10,25 +10,22 @@ namespace novella1.Characters
     internal class Rose : Person,Scenario
     {
         #region Variables
-        private bool inhaler;
         private bool life = true;
         private const string filePathChapter1 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 1 (Plane)\\RoseTxt.txt";
         private const string filePathChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\RoseTxt.txt";
-        private long lastPositionChapter1 = 0;
+        private const string filePathChoiceChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\RoseChoiceTxt.txt";
+        public long lastPositionChapter1 = 0;
+        public long lastPositionChapter2 = 0;
+        public long lastPositionChoiceChapter2 = 0;
         private StreamReader readerChapter1 = new StreamReader(filePathChapter1);
+        private StreamReader readerChapter2 = new StreamReader(filePathChapter2);
+        private StreamReader readerChoiceChapter2 = new StreamReader(filePathChoiceChapter2);
         #endregion
         #region Properties
         public bool Life
         {
             set { life = value; }
             get { return life; }
-        }
-        public bool Inhaler
-        {
-            set
-            { inhaler = value; }
-            get
-            { return inhaler; }
         }
         public string FilePathChapter1
         {
@@ -38,14 +35,21 @@ namespace novella1.Characters
         {
             get { return filePathChapter2; }
         }
+        public string FilePathChoiceChapter2
+        {
+            get { return filePathChoiceChapter2; }
+        }
         public StreamReader ReaderChapter1
         {
             get { return readerChapter1; }
         }
-        public long LastPositionChapter1
+        public StreamReader ReaderChapter2
         {
-            set { lastPositionChapter1 = value; }
-            get { return lastPositionChapter1; }
+            get { return readerChapter2; }
+        }
+        public StreamReader ReaderChoiceChapter2
+        {
+            get { return readerChoiceChapter2; }
         }
         #endregion
         public void ShowPerson()
@@ -212,7 +216,7 @@ namespace novella1.Characters
             Console.ForegroundColor = ConsoleColor.White;
             #endregion
         }
-        public void TextReader(StreamReader reader, long lastPosition)
+        public void TextReader(StreamReader reader, ref long lastPosition)
         {
             ShowPerson();
             reader.BaseStream.Seek(lastPosition, SeekOrigin.Begin);

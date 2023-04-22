@@ -8,6 +8,7 @@ namespace novella1.Interface
 {
     internal interface Scenario
     {
-        void TextReader(StreamReader reader,long lastPosition);
+        void TextReader(StreamReader reader,ref long lastPosition);
+        void WaitKeyPress();
     }
 }

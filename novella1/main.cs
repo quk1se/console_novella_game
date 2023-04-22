@@ -13,8 +13,10 @@ namespace novella
     {
         static void Main(string[] args)
         {
-            GameChapter1 gc1 = new GameChapter1();
-            gc1.StartGame();
+            /*GameChapter1 gc1 = new GameChapter1();
+            gc1.StartGame();*/
+            GameChapter2 gc2 = new GameChapter2();
+            gc2.StartGame();
             Console.Read();
         }
     }

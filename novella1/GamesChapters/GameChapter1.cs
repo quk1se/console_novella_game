@@ -21,59 +21,6 @@ namespace novella1.GamesChapters
             Console.Clear();
             Thread.Sleep(1000);
         }
-        public void StartGame()
-        {
-            Bob b = new Bob();
-            Jeff j = new Jeff();
-            Marko m = new Marko();
-            Rose r = new Rose();
-            Demon d = new Demon();
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-            b.TextReader(b.ReaderChapter1, b.LastPositionChapter1);
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-            b.TextReader(b.ReaderChapter1, b.LastPositionChapter1);
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-            b.TextReader(b.ReaderChapter1, b.LastPositionChapter1);
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-            b.TextReader(b.ReaderChapter1, b.LastPositionChapter1);
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            b.TextReader(b.ReaderChapter1, b.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-            d.ShowPersonWoman();
-            d.TextReaderChapter1(d.ReaderChapter1, d.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            d.ShowPersonWoman();
-            d.TextReaderChapter1(d.ReaderChapter1, d.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-            b.TextReader(b.ReaderChapter1, b.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            d.ShowPersonPilot();
-            d.TextReaderChapter1(d.ReaderChapter1, d.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            r.TextReader(r.ReaderChapter1, r.LastPositionChapter1);
-            m.TextReader(m.ReaderChapter1, m.LastPositionChapter1);
-            j.TextReader(j.ReaderChapter1, j.LastPositionChapter1);
-            b.TextReader(b.ReaderChapter1, b.LastPositionChapter1);
-        }
         public void ShowRules()
         {
             Console.WriteLine("\t\t\t\t\t\t\t    Все персонажи вымышлены,история не взята из реальной жизни, все это просто фантазия.");
@@ -93,6 +40,50 @@ namespace novella1.GamesChapters
             }
             Console.Clear();
             Thread.Sleep(1000);
+        }
+        public void StartGame()
+        {
+            Bob b = new Bob();
+            Jeff j = new Jeff();
+            Marko m = new Marko();
+            Rose r = new Rose();
+            Demon d = new Demon();
+            for (int i = 0; i < 5; i++)
+            {
+                j.TextReader(j.ReaderChapter1, ref j.lastPositionChapter1);
+                if (i == 4) break;
+                b.TextReader(b.ReaderChapter1, ref b.lastPositionChapter1);
+            }
+            for (int i = 0; i < 6; i++)
+            {
+                m.TextReader(m.ReaderChapter1, ref m.lastPositionChapter1);
+                if (i == 5) break;
+                r.TextReader(r.ReaderChapter1, ref r.lastPositionChapter1);
+            }
+            j.TextReader(j.ReaderChapter1, ref j.lastPositionChapter1);
+            m.TextReader(m.ReaderChapter1, ref m.lastPositionChapter1);
+            r.TextReader(r.ReaderChapter1, ref r.lastPositionChapter1);
+            b.TextReader(b.ReaderChapter1, ref b.lastPositionChapter1);
+            r.TextReader(r.ReaderChapter1, ref r.lastPositionChapter1);
+            j.TextReader(j.ReaderChapter1, ref j.lastPositionChapter1);
+            d.ShowPersonWoman();
+            d.TextReaderChapter1(d.ReaderChapter1, ref d.lastPositionChapter1);
+            m.TextReader(m.ReaderChapter1, ref m.lastPositionChapter1);
+            d.ShowPersonWoman();
+            d.TextReaderChapter1(d.ReaderChapter1, ref d.lastPositionChapter1);
+            m.TextReader(m.ReaderChapter1, ref m.lastPositionChapter1);
+            r.TextReader(r.ReaderChapter1, ref r.lastPositionChapter1);
+            m.TextReader(m.ReaderChapter1, ref m.lastPositionChapter1);
+            j.TextReader(j.ReaderChapter1, ref j.lastPositionChapter1);
+            b.TextReader(b.ReaderChapter1, ref b.lastPositionChapter1);
+            r.TextReader(r.ReaderChapter1, ref r.lastPositionChapter1);
+            d.ShowPersonPilot();
+            d.TextReaderChapter1(d.ReaderChapter1, ref d.lastPositionChapter1);
+            m.TextReader(m.ReaderChapter1, ref m.lastPositionChapter1);
+            r.TextReader(r.ReaderChapter1, ref r.lastPositionChapter1);
+            m.TextReader(m.ReaderChapter1, ref m.lastPositionChapter1);
+            j.TextReader(j.ReaderChapter1, ref j.lastPositionChapter1);
+            b.TextReader(b.ReaderChapter1, ref b.lastPositionChapter1);
         }
     }
 }
