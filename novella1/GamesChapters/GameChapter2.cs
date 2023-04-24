@@ -12,6 +12,9 @@ namespace novella1.GamesChapters
 {
     internal class GameChapter2 : GameDrawing
     {
+        public static bool InhalerChoice { get; set; }
+
+
         public void StartGame()
         {
             Bob b = new Bob();
@@ -21,7 +24,6 @@ namespace novella1.GamesChapters
             Demon d = new Demon();
             Events e = new Events();
             ChoicesChapter2 cc2 = new ChoicesChapter2();
-            bool inhalerChoice;
             b.TextReader(b.ReaderChapter2, ref b.lastPositionChapter2);
             m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
             b.TextReader(b.ReaderChapter2, ref b.lastPositionChapter2);
@@ -35,8 +37,8 @@ namespace novella1.GamesChapters
             j.TextReader(j.ReaderChapter2, ref j.lastPositionChapter2);
             e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2);
             e.TextReader(e.ReaderChoiceChapter2, ref e.lastPositionChoiceChapter2);
-            inhalerChoice = cc2.InhalerChoice();
-            if (inhalerChoice)
+            InhalerChoice = cc2.InhalerChoice();
+            if (InhalerChoice)
             {
                 b.TextReader(b.ReaderChoiceChapter2, ref b.lastPositionChoiceChapter2);
                 r.TextReader(r.ReaderChoiceChapter2, ref r.lastPositionChoiceChapter2);
@@ -65,7 +67,7 @@ namespace novella1.GamesChapters
             m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
             j.TextReader(j.ReaderChapter2, ref j.lastPositionChapter2);
             r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
-            if (inhalerChoice == false)
+            if (InhalerChoice == false)
             {
                 j.TextReader(j.ReaderNoInhalerChapter2, ref j.lastPositionNoInhalerChapter2);
                 r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
@@ -136,13 +138,13 @@ namespace novella1.GamesChapters
                 r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
                 m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
                 b.TextReader(b.ReaderChapter2, ref b.lastPositionChapter2);
-                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2);
+                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2); Thread.Sleep(1000); Console.Clear();
                 m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
                 j.TextReader(j.ReaderChapter2, ref j.lastPositionChapter2);
                 b.TextReader(b.ReaderChapter2, ref b.lastPositionChapter2);
                 r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
                 m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
-                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2);
+                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2); Thread.Sleep(1000); Console.Clear();
                 j.TextReader(j.ReaderChapter2, ref j.lastPositionChapter2);
                 b.TextReader(b.ReaderChapter2, ref b.lastPositionChapter2);
                 r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
@@ -154,7 +156,7 @@ namespace novella1.GamesChapters
                     m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
                     r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
                 }
-                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2);
+                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2); Thread.Sleep(1000); Console.Clear();
                 for (int i = 0; i < 4; i++)
                 {
                     j.TextReader(j.ReaderChapter2, ref j.lastPositionChapter2);
@@ -162,7 +164,7 @@ namespace novella1.GamesChapters
                     m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
                     r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
                 }
-                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2);
+                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2); Thread.Sleep(1000); Console.Clear();
                 for (int i = 0; i < 4; i++)
                 {
                     j.TextReader(j.ReaderChapter2, ref j.lastPositionChapter2);
@@ -170,7 +172,7 @@ namespace novella1.GamesChapters
                     m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
                     if (i < 3) r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
                 }
-                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2);
+                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2); Thread.Sleep(1000); Console.Clear();
                 for (int i = 0; i < 2; i++)
                 {
                     j.TextReader(j.ReaderChapter2, ref j.lastPositionChapter2);
@@ -178,7 +180,7 @@ namespace novella1.GamesChapters
                     m.TextReader(m.ReaderChapter2, ref m.lastPositionChapter2);
                     if (i < 1) r.TextReader(r.ReaderChapter2, ref r.lastPositionChapter2);
                 }
-                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2);
+                e.TextReader(e.ReaderChapter2, ref e.lastPositionChapter2); Thread.Sleep(1000); Console.Clear();
                 for (int i = 0; i < 3; i++)
                 {
                     j.TextReader(j.ReaderChapter2, ref j.lastPositionChapter2);

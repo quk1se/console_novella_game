@@ -12,10 +12,28 @@ namespace novella1.Characters
         #region Variables
         private const string filePathChapter1 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 1 (Plane)\\DemonTxt.txt";
         private const string filePathChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\DemonTxt.txt";
+        private const string filePathChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)\\DemonTxt.txt";
+        private const string filePathNoInhalerChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)NoInhaler\\DemonNoInhalerTxt.txt";
+        private const string filePathNoInhalerBobChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)NoInhaler\\DemonChoiceBobTxt.txt";
+        private const string filePathNoInhalerMarkoChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)NoInhaler\\DemonChoiceMarkoTxt.txt";
+        private const string filePathBobChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)\\DemonChoiceBobTxt.txt";
+        private const string filePathMarkoChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)\\DemonChoiceMarkoTxt.txt";
         public long lastPositionChapter1 = 0;
         public long lastPositionChapter2 = 0;
+        public long lastPositionChapter3 = 0;
+        public long lastPositionNoInhalerChapter3 = 0;
+        public long lastPositionNoInhalerBobChapter3 = 0;
+        public long lastPositionNoInhalerMarkoChapter3 = 0;
+        public long lastPositionBobChapter3 = 0;
+        public long lastPositionMarkoChapter3 = 0;
         private StreamReader readerChapter1 = new StreamReader(filePathChapter1);
         private StreamReader readerChapter2 = new StreamReader(filePathChapter2);
+        private StreamReader readerChapter3 = new StreamReader(filePathChapter3);
+        private StreamReader readerNoInhalerChapter3 = new StreamReader(filePathNoInhalerChapter3);
+        private StreamReader readerNoInhalerBobChapter3 = new StreamReader(filePathNoInhalerBobChapter3);
+        private StreamReader readerNoInhalerMarkoChapter3 = new StreamReader(filePathNoInhalerMarkoChapter3);
+        private StreamReader readerBobChapter3 = new StreamReader(filePathBobChapter3);
+        private StreamReader readerMarkoChapter3 = new StreamReader(filePathMarkoChapter3);
         #endregion
         #region Properties
         public string FilePathChapter1
@@ -26,6 +44,30 @@ namespace novella1.Characters
         {
             get { return filePathChapter2; }
         }
+        public string FilePathChapter3
+        {
+            get { return filePathChapter3; }
+        }
+        public string FilePathNoInhalerChapter3
+        {
+            get { return filePathNoInhalerChapter3; }
+        }
+        public string FilePathNoInhalerBobChapter3
+        {
+            get { return filePathNoInhalerBobChapter3; }
+        }
+        public string FilePathNoInhalerMarkoChapter3
+        {
+            get { return filePathNoInhalerMarkoChapter3; }
+        }
+        public string FilePathBobChapter3
+        {
+            get { return filePathBobChapter3; }
+        }
+        public string FilePathMarkoChapter3
+        {
+            get { return filePathMarkoChapter3; }
+        }
         public StreamReader ReaderChapter1
         {
             get { return readerChapter1; }
@@ -33,6 +75,30 @@ namespace novella1.Characters
         public StreamReader ReaderChapter2
         {
             get { return readerChapter2; }
+        }
+        public StreamReader ReaderChapter3
+        {
+            get { return readerChapter3; }
+        }
+        public StreamReader ReaderNoInhalerChapter3
+        {
+            get { return readerNoInhalerChapter3; }
+        }
+        public StreamReader ReaderNoInhalerBobChapter3
+        {
+            get { return readerNoInhalerBobChapter3; }
+        }
+        public StreamReader ReaderNoInhalerMarkoChapter3
+        {
+            get { return readerNoInhalerMarkoChapter3; }
+        }
+        public StreamReader ReaderBobChapter3
+        {
+            get { return readerBobChapter3; }
+        }
+        public StreamReader ReaderMarkoChapter3
+        {
+            get { return readerMarkoChapter3; }
         }
         #endregion
 

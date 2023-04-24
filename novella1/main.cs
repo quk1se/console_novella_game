@@ -16,7 +16,9 @@ namespace novella
             /*GameChapter1 gc1 = new GameChapter1();
             gc1.StartGame();*/
             GameChapter2 gc2 = new GameChapter2();
-            gc2.StartGame();
+            GameChapter3 gc3 = new GameChapter3();
+            //gc2.StartGame();
+            gc3.StartGame();
             Console.Read();
         }
     }

@@ -14,12 +14,21 @@ namespace novella1.Characters
         private const string filePathChapter1 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 1 (Plane)\\RoseTxt.txt";
         private const string filePathChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\RoseTxt.txt";
         private const string filePathChoiceChapter2 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 2 (Survive)\\RoseChoiceTxt.txt";
+        private const string filePathChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)\\RoseTxt.txt";
+        private const string filePathBobChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)\\RoseChoiceBobTxt.txt";
+        private const string filePathMarkoChapter3 = "D:\\itstep\\С#\\novella1\\novella1\\Chapter 3 (Escape)\\RoseChoiceMarkoTxt.txt";
         public long lastPositionChapter1 = 0;
         public long lastPositionChapter2 = 0;
         public long lastPositionChoiceChapter2 = 0;
+        public long lastPositionChapter3 = 0;
+        public long lastPositionBobChapter3 = 0;
+        public long lastPositionMarkoChapter3 = 0;
         private StreamReader readerChapter1 = new StreamReader(filePathChapter1);
         private StreamReader readerChapter2 = new StreamReader(filePathChapter2);
         private StreamReader readerChoiceChapter2 = new StreamReader(filePathChoiceChapter2);
+        private StreamReader readerChapter3 = new StreamReader(filePathChapter3);
+        private StreamReader readerBobChapter3 = new StreamReader(filePathBobChapter3);
+        private StreamReader readerMarkoChapter3 = new StreamReader(filePathMarkoChapter3);
         #endregion
         #region Properties
         public bool Life
@@ -39,6 +48,18 @@ namespace novella1.Characters
         {
             get { return filePathChoiceChapter2; }
         }
+        public string FilePathChapter3
+        {
+            get { return filePathChapter3; }
+        }
+        public string FilePathBobChapter3
+        {
+            get { return filePathBobChapter3; }
+        }
+        public string FilePathMarkoChapter3
+        {
+            get { return filePathMarkoChapter3; }
+        }
         public StreamReader ReaderChapter1
         {
             get { return readerChapter1; }
@@ -50,6 +71,18 @@ namespace novella1.Characters
         public StreamReader ReaderChoiceChapter2
         {
             get { return readerChoiceChapter2; }
+        }
+        public StreamReader ReaderChapter3
+        {
+            get { return readerChapter3; }
+        }
+        public StreamReader ReaderBobChapter3
+        {
+            get { return readerBobChapter3; }
+        }
+        public StreamReader ReaderMarkoChapter3
+        {
+            get { return readerMarkoChapter3; }
         }
         #endregion
         public void ShowPerson()
