@@ -124,12 +124,13 @@ namespace novella1.GamesChapters
                     m.TextReader(m.ReaderNoInhalerChapter2, ref m.lastPositionNoInhalerChapter2);
                 }
                 e.TextReader(e.ReaderNoInhalerChapter2, ref e.lastPositionNoInhalerChapter2); Thread.Sleep(1000); Console.Clear();
-                for (int i = 0; i < 2; i++)
+                for (int i = 0; i < 3; i++)
                 {
                     j.TextReader(j.ReaderNoInhalerChapter2, ref j.lastPositionNoInhalerChapter2);
                     b.TextReader(b.ReaderNoInhalerChapter2, ref b.lastPositionNoInhalerChapter2);
                     m.TextReader(m.ReaderNoInhalerChapter2, ref m.lastPositionNoInhalerChapter2);
                 }
+
             }
             else 
             {

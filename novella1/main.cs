@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using novella1.GamesChapters;
+using novella1.FullGame;
 
 namespace novella
 {
@@ -14,11 +15,13 @@ namespace novella
         static void Main(string[] args)
         {
             /*GameChapter1 gc1 = new GameChapter1();
-            gc1.StartGame();*/
             GameChapter2 gc2 = new GameChapter2();
             GameChapter3 gc3 = new GameChapter3();
-            //gc2.StartGame();
-            gc3.StartGame();
+            gc1.StartGame();
+            gc2.StartGame();
+            gc3.StartGame();*/
+            FullGame game = new FullGame();
+            game.StartFullGame();
             Console.Read();
         }
     }

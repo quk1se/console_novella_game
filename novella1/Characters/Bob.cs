@@ -326,9 +326,238 @@ namespace novella1.Characters
             Console.ForegroundColor = ConsoleColor.White;
             #endregion
         }
+        public void ShowDemon()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            for (int i = 0; i < 1; i++)
+            {
+                for (int j = 0; j < 209; j++)
+                {
+                    Console.Write("█");
+                }
+            }
+            #region Demon drawing
+            Console.Write("█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("███████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("█████████████████████████████████████████████████");
+            Console.Write("████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("███████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("██████████████████████████████████████████████");
+            Console.Write("███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("█████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("██████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.Red;//
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("██████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;//
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("██████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Write("█");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("█");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("█");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("██████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("█████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("██████████");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("██████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.Red;//
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.DarkGray;//
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("███████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.Red;//
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.Black;//
+            Console.Write("█");
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.DarkGray;//
+            Console.Write("█");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;//
+            Console.Write("███");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("█");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("██████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("█");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("█████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("███████");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("█████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("█████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("█████████");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("██");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("█████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("███████████");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("█████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("███████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("██████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("█████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("█████████████████████████████████████████");
+            Console.Write("█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("█████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███████████████████████████████████████");
+            Console.Write("█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("█████████████████████████████████");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("███████████████████████████████████████");
+            Console.Write("===============================================================================================================================================" +
+                "==================================================================");
+            Console.ForegroundColor = ConsoleColor.White;
+            #endregion
+        }
         public void TextReader(StreamReader reader,ref long lastPosition)
         {
             ShowPerson();
+            reader.BaseStream.Seek(lastPosition, SeekOrigin.Begin);
+            string line = reader.ReadLine();
+            lastPosition = reader.BaseStream.Position;
+            foreach (char c in line.ToCharArray())
+            {
+                Console.Write(c);
+                //Thread.Sleep(30);
+            }
+            Console.WriteLine();
+            WaitKeyPress();
+            Console.Clear();
+        }
+        public void TextReaderDemon(StreamReader reader, ref long lastPosition)
+        {
+            ShowDemon();
             reader.BaseStream.Seek(lastPosition, SeekOrigin.Begin);
             string line = reader.ReadLine();
             lastPosition = reader.BaseStream.Position;

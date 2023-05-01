@@ -48,6 +48,8 @@ namespace novella1.GamesChapters
             Marko m = new Marko();
             Rose r = new Rose();
             Demon d = new Demon();
+            StartScreenChapter();
+            ShowRules();
             for (int i = 0; i < 5; i++)
             {
                 j.TextReader(j.ReaderChapter1, ref j.lastPositionChapter1);
