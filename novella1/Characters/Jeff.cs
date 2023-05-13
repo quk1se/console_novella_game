@@ -296,7 +296,7 @@ namespace novella1.Characters
             foreach (char c in line.ToCharArray())
             {
                 Console.Write(c);
-                //Thread.Sleep(30);
+                Thread.Sleep(30);
             }
             Console.WriteLine();
             WaitKeyPress();
