@@ -17,9 +17,7 @@ namespace novella
         {
             Console.Title = "Island Novella";
             FullGame game = new FullGame();
-            //game.StartFullGame();
-            GameChapter2 gc2 = new GameChapter2();
-            gc2.StartGame();
+            game.StartFullGame();
             Console.Read();
         }
     }
